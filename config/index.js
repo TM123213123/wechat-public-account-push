@@ -42,19 +42,19 @@ export const config = {
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {"type": "*生日", "name": "老婆", "year": "2000", "date": "02-28"},
-        {"type": " *节日", "name": "恋爱纪念日", "year": "2022", "date": "09-02"},
+        {"type": " 节日", "name": "恋爱纪念日", "year": "2022", "date": "09-02"},
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-        {"type": "生日", "name": "李四", "year": "1996", "date": "09-31"},
-        {"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
+        {"type": "生日", "name": "me", "year": "1998", "date": "01-15"},
+        {"type": "节日", "name": "被搭讪纪念日", "year": "2022", "date": "08-30"},
       ],
       // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
       customizedDateList: [
         // 在一起的日子
         {"keyword": "love_day", date: "2022-09-02"},
-        // 结婚纪念日
-        {"keyword": "marry_day", date: "2022-09-09"},
-        // 退伍日
-        {"keyword": "ex_day", date: "2022-09-10"},
+        // 生日
+        {"keyword": "brithday_day", date: "2000-02-28"},
+        // 当天日期
+        {"keyword": "city_day", date: "2022-09-10"},
       ]
     },
     {
