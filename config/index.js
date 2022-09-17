@@ -95,16 +95,26 @@ export const config = {
       ]
     },
     {
-      name: "老婆1",
-      id: "",
-      useTemplateId: "",
-      province: "",
-      city: "",
-      horoscopeDate: '',
-      horoscopeDateType: '',
+      name: "自己",
+      id: "oZmtg53_SH0AYvNKuVI62BKMm9nU",
+      useTemplateId: "pnq7Jqeja_iIrzMDKZto8b44TPJ9X_uVvCB0j1ge-yM",
+      province: "甘肃",
+      city: "酒泉",
+      horoscopeDate: '02-28',
+      horoscopeDateType: '今日',
       openUrl: "https://wangxinleo.cn",
-      festivals: [],
-      customizedDateList: []
+      festivals: [// 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
+        {"type": "*生日", "name": "颖宝儿", "year": "2000", "date": "02-28"},
+        {"type": "节日", "name": "七夕", "year": "2022", "date": "07-07"},
+        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+        {"type": "生日", "name": "相恋纪念日", "year": "2022", "date": "09-04"},
+        {"type": "节日", "name": "马鑫", "year": "2022", "date": "01-15"},],
+      customizedDateList: [ // 在一起的日子
+        {"keyword": "love_day", date: "2022-09-04"},
+        // 结婚纪念日
+        {"keyword": "marry_day", date: "2022-09-04"},
+        // 退伍日
+        {"keyword": "ex_day", date: "2022-09-10"},]
     },
     {
       name: "老婆2",
@@ -115,7 +125,7 @@ export const config = {
       horoscopeDate: '',
       horoscopeDateType: '',
       openUrl: "https://wangxinleo.cn",
-      festivals: [],
+      festivals: [ ],
       customizedDateList: []
     },
     {
