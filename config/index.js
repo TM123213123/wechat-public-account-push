@@ -15,7 +15,44 @@ export const config = {
 
   // 是否给文字设置多彩颜色, 和emoji不兼容
   // 如果您使用了微信测试号的模板中含有emoji表情，请填 false
-  isShowColor: true,
+  IS_SHOW_COLOR: true,
+
+  // 功能开关,打开：true，关闭：false
+  SWITCH: {
+    /** 每日天气 */
+    weather: true,
+
+    /** 节假日 */
+    // 下一休息日综合提醒
+    holidaytts: true,
+
+    /** 每日N句 */
+    // 金山每日一句
+    CIBA: true,
+    // 每日一言
+    oneTalk: false,
+    // 土味情话(彩虹屁)
+    earthyLoveWords: false,
+    // 朋友圈文案
+    momentCopyrighting: false,
+    // 毒鸡汤
+    poisonChickenSoup: false,
+    // 古诗古文
+    poetry: false,
+
+    /** 星座运势 */
+    horoscope: false,
+
+    /** 生日消息和节日消息 */
+    birthdayMessage: true,
+  },
+
+  /** 每日一言 */
+
+  // 每日一言的内容类型
+  // 可以填写【动画，漫画，游戏，小说，原创，网络，其他】； 随机则填写 ""
+  LITERARY_PREFERENCE: "",
+  
 
   /**
    * 接收公众号消息的微信号，如果有多个，需要在[]里用英文逗号间隔
@@ -23,7 +60,7 @@ export const config = {
   USERS: [
     {
       // 想要发送的人的名字
-      name: "颖宝儿",
+      name: "宝贝",
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: "oZmtg5-sHtZX7M75WcIHmvdq5eUw",
       // 你想对他发送的模板消息的模板ID
@@ -42,19 +79,19 @@ export const config = {
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {"type": "*生日", "name": "老婆", "year": "2000", "date": "02-28"},
-        {"type": " 节日", "name": "恋爱纪念日", "year": "2022", "date": "09-04"},
+        {"type": "节日", "name": "结婚纪念日", "year": "2020", "date": "09-03"},
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-        {"type": "生日", "name": "me", "year": "1998", "date": "01-15"},
-        {"type": "节日", "name": "被搭讪纪念日", "year": "2022", "date": "08-30"},
+        {"type": "生日", "name": "纪念日", "year": "2022", "date": "09-04"},
+        {"type": "节日", "name": "被搭讪纪念日", "year": "2022", "date": "09-02"},
       ],
       // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
       customizedDateList: [
         // 在一起的日子
         {"keyword": "love_day", date: "2022-09-04"},
-        // 生日
-        {"keyword": "brithday_day", date: "2000-02-28"},
-        // 当天日期
-        {"keyword": "city_day", date: "2022-09-10"},
+        // 结婚纪念日
+        {"keyword": "marry_day", date: "2022-09-04"},
+        // 退伍日
+        {"keyword": "ex_day", date: "2022-09-10"},
       ]
     },
     {
@@ -105,12 +142,12 @@ export const config = {
   CALLBACK_TEMPLATE_ID: "RnEoOMOJn3zMvCSAjipdHL80WfQx_eZPQE4vAlxAMss",
 
   // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
-  CALLBACK_USERS: ["oZmtg53_SH0AYvNKuVI62BKMm9nU"]
+  CALLBACK_USERS: [
     {
       // 一般都填自己
       name: "自己",
       // 自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: "oZmtg53_SH0AYvNKuVI62BKMm9nU",
+      id: "oZmtg5-sHtZX7M75WcIHmvdq5eUw",
     },
     // 你可以不断按格式往下增加
     // ...
@@ -200,12 +237,6 @@ export const config = {
     // 你可以不断按格式往下增加
     // ...
   ],
-
-  /** 每日一言 */
-
-  // 好文节选的内容类型
-  // 可以填写【动画，漫画，游戏，小说，原创，网络，其他】； 随机则填写 ""
-  LITERARY_PREFERENCE: ""
 
 
 }
