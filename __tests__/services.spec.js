@@ -544,7 +544,7 @@ describe('services', () => {
     })
     test('selfDayjs', () => {
         dayjs.tz.guess = () => 'UTC'
-        expect(selfDayjs('2022-09-09 12:00:00').hour()).toEqual(4)
+        expect(selfDayjs('2022-09-09 07:30:00').hour()).toEqual(4)
     })
     test('getConstellationFortune', async () => {
         expect(getConstellationFortune()).resolves.toEqual([])
