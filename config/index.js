@@ -66,7 +66,7 @@ export const config = {
       // 你想对他发送的模板消息的模板ID
       useTemplateId: "pnq7Jqeja_iIrzMDKZto8b44TPJ9X_uVvCB0j1ge-yM",
       // 所在省份
-      province: "内蒙古自治区",
+      province: "内蒙古",
       // 所在城市
       city: "包头",
       // 新历生日, 仅用作获取星座运势, 格式必须
@@ -98,7 +98,7 @@ export const config = {
       name: "自己",
       id: "oZmtg53_SH0AYvNKuVI62BKMm9nU",
       useTemplateId: "pnq7Jqeja_iIrzMDKZto8b44TPJ9X_uVvCB0j1ge-yM",
-      province: "内蒙古自治区",
+      province: "内蒙古",
       city: "包头",
       horoscopeDate: '02-28',
       horoscopeDateType: '今日',
