@@ -104,7 +104,7 @@ export const config = {
       horoscopeDateType: '今日',
       openUrl: "https://wangxinleo.cn",
       festivals: [// 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-        {"type": "*生日", "name": "小韩生日", "year": "2000", "date": "03-03"},
+        {"type": "生日", "name": "小韩生日", "year": "2000", "date": "03-03"},
         {"type": "节日", "name": "七夕", "year": "2022", "date": "07-07"},
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
         {"type": "生日", "name": "相恋纪念日", "year": "2022", "date": "09-04"},
@@ -195,7 +195,7 @@ export const config = {
    */
   FESTIVALS: [
     // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-    {"type": "*生日", "name": "老婆", "year": "1996", "date": "09-09", isShowAge: true},
+    {"type": "生日", "name": "老婆", "year": "1996", "date": "09-09", isShowAge: true},
     {"type": "节日", "name": "结婚纪念日", "year": "2020", "date": "09-03"},
     // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
     {"type": "生日", "name": "李四", "year": "1996", "date": "09-31", isShowAge: true},
